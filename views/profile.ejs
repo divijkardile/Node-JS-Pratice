@@ -7,5 +7,10 @@
 </head>
 <body>
     <h1>Profile Page <%= user.name %></h1>
+    <ul>
+        <% user.skills.forEach((data) =>{ %>
+            <li><%= data %></li>
+        <% }) %>
+    </ul>
 </body>
 </html>

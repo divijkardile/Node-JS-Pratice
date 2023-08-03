@@ -16,8 +16,12 @@ app.get('/about', (_, res) => {
 })
 
 app.get('/profile', (_, res) => {
-    const user = {name: 'Divij', email: 'divijkardile@gmail.com', city: 'Junnar'}
+    const user = {name: 'Divij', email: 'divijkardile@gmail.com', city: 'Junnar', skills: ['php', 'py', 'js', 'c#']}
     res.render('profile', {user});
+})
+
+app.get('/login', (_,res) =>{
+    res.render('login')
 })
 
 app.get('*', (_, res) => {
